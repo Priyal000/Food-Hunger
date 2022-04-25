@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(191, 189, 185);
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(52, 31, 31);
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px red;
+}
+
+.btn{
+    padding: 2px 2px;
+    border-radius: 5px;
+    background-color: rosybrown;
+    margin: 5px 5px;
+}
+
+.UpBtn {
+    text-decoration: none;
+    color: rgb(224, 222, 222);
+}
+.btn:hover{
+    background-color: red;
+}
+.dishes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sweets {
+    margin: 2px;
+    padding: 2px 2px;
+    width: 420px;
+    height: 370px;
+    border-radius: 15px;
+    background-color: rgb(172, 165, 165);
+    opacity: 0.9;
+    color: rgb(47, 3, 3);
+    text-shadow: 1px 1px 2px rgb(86, 85, 85);
+}
+
+.spicy {
+    margin: 2px;
+    padding: 2px 2px;
+    width: 420px;
+    height: 370px;
+    border-radius: 15px;
+    background-color: rgb(172, 165, 165);
+    opacity: 0.9;
+    color: rgb(47, 3, 3);
+    text-shadow: 1px 1px 2px rgb(86, 85, 85);
+}
+
+.juices {
+    margin: 2px;
+    padding: 2px 2px;
+    width: 420px;
+    height: 370px;
+    border-radius: 15px;
+    background-color: rgb(172, 165, 165);
+    opacity: 0.9;
+    color: rgb(47, 3, 3);
+    text-shadow: 1px 1px 2px rgb(86, 85, 85);
+}
+
+.buttons {
+    /* background-color: rgb(111, 111, 109); */
+    text-align: center;
+    border-radius: 10px;
+
+}
+button{
+    padding: 2px 2px;
+    border-radius: 10px;
+    background-color: rgb(216, 45, 45);
+    margin: 5px 5px;
+    height: 28px;
+}
+a{
+    text-decoration: none;
+    color: rgb(194, 190, 190);
+    font-size: 1rem;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+button:hover{
+    background-color: rgb(255, 3, 3);
+}

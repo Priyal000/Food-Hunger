@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweets.css">
+    <link rel="stylesheet" media="screen and (max-width: 724px )" href="phone.css">
+    <title>Sweets</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(144, 139, 120);
+            width: 100%;
+            height: 100%;
+        }
+
+        .UpBtn {
+            text-decoration: none;
+            color: rgb(224, 222, 222);
+        }
+
+        .btn {
+            padding: 2px 2px;
+            border-radius: 5px;
+            background-color: rosybrown;
+            margin: 5px 5px;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 50px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .Sweets {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .sweet1 {
+            /* border: 2px solid rgb(50 52 44); */
+            background-color: #b6b6a8;
+            border-radius: 15px;
+            width: 300px; 
+            height: 400px;
+            padding: 5px 2px;
+        }
+        .sweet1:hover{
+            background-color: #f3f3d0;
+        }
+        .sweet2:hover{
+            background-color: #f3f3d0;
+        }
+        .sweet3:hover{
+            background-color: #f3f3d0;
+        }
+        .sweet4:hover{
+            background-color: #f3f3d0;
+        }
+
+        .sweet2 {
+            background-color: #b6b6a8;
+            border-radius: 15px;
+            width: 300px; 
+            height: 400px;
+            padding: 5px 2px;
+        }
+
+        .sweet3 {
+            background-color: #b6b6a8;
+            border-radius: 15px;
+            width: 300px; 
+            height: 400px;
+            padding: 5px 2px;
+        }
+
+        .sweet4 {
+            background-color: #b6b6a8;
+            border-radius: 15px;
+            width: 300px; 
+            height: 400px;
+            padding: 5px 2px;
+            
+        }
+
+        .imgs {
+            width: 300px;
+            height: 200px;
+        }
+
+        .buttons {
+            width: auto;
+            background-color: rgb(95, 120, 120);
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 105px;
+            margin-top: 17px;
+        }
+
+        .buttons:hover {
+            background-color: darkblue;
+        }
+
+        .nav {
+            background-color: blanchedalmond;
+        }
+
+        #cart {
+            margin: auto;
+            /* border: 2px solid black; */
+            /* border-radius: 4px; */
+            width: 99%;
+            height: auto;
+        }
+        .cart-item{
+            background-color: rgb(94, 94, 135);
+            border: 2px solid rgb(106 102 89);
+            text-shadow: 0.3px 0.3px 0.8px black;
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+        #dltBtn{
+            width: auto;
+            /* height: 35px; */
+        }
+        #cart-head{
+            text-align: center;
+            color: rgb(7, 7, 6);
+            text-shadow: 1px 1px 1px rgb(91, 85, 85);
+        }
+        #cart-p{
+            text-align: center;
+            color: rgb(251, 247, 247);
+        }
+        .h4{
+            text-align: center;
+            /* background-color: rgb(120 119 115); */
+            width: 100%;
+            text-shadow: 1px 1px 1px rgb(194, 160, 160);
+            /* border: 1px solid rgb(120 116 100); */
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="left">
+            <button class="btn"><a class="UpBtn" href="mb.html">&#8617; Go back</a></button>
+        </div>
+
+    </div>
+    <h1 id="cart-head">
+        Sweets
+    </h1>
+    <div class="Sweets">
+        <div id="sweet-1" class="sweet1">
+            <span>
+                <h4 class="h4">
+                 Cup Cake
+                </h4>
+            </span>
+            <img class="imgs" src="sweet1.jpg" alt="image">
+            <p>
+                Price: &#8377;100/Cup
+            </p>
+            <hr>
+            <button onclick="addToCart('cup cake', 100)" class="buttons">Add to Cart</button>
+        </div>
+        <div id="sweet-2" class="sweet2">
+            <h4 class="h4">
+                Rasgulla
+            </h4>
+            <img class="imgs" src="sweet2.jpg" alt="image">
+            <p>
+                Price: &#8377;20/peice
+            </p>
+            <hr>
+            <button onclick="addToCart('rasgulla', 20)" class="buttons">Add to Cart</button>
+        </div>
+        <div id="sweet-3" class="sweet3">
+            <h4 class="h4">
+                Jalebi
+            </h4>
+            <img class="imgs" src="sweet3.jpg" alt="image">
+            <p>
+                Price: &#8377;100/plate
+            </p>
+            <hr>
+            <button onclick="addToCart('jalebi', 100)" class="buttons">Add to Cart</button>
+        </div>
+        <div id="sweet-4" class="sweet4">
+            <h4 class="h4">
+                Kaju katli
+            </h4>
+            <img class="imgs" src="sweet4.jpg" alt="image">
+            <p class="pi">
+                Price: &#8377;100/plate
+            </p>
+            <hr>
+            <button onclick="addToCart('kaju katli', 100)" class="buttons">Add to Cart</button>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <h2 id="cart-head">
+        My Cart
+    </h2>
+    <div id="cart">
+       <p id="cart-p">
+        Your Cart is Empty!! Add Dishes From above Section
+       </p>
+    </div>
+
+    <script src="cart.js"></script>
+    
+</body>
+
+</html>
